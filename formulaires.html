@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulat d'Algérie à Nice - Services Consulaires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://consulat-nice-algerie.fr/wp-content/uploads/2020/10/cropped-651px-Seal_of_Algeria_svg-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .service-card {
+  background: #fff;
+  padding: 25px;
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.service-icon {
+  font-size: 28px;
+  color: #006233;
+  margin-bottom: 10px;
+}
+.service-card ul {
+  text-align: left;
+  padding-left: 20px;
+}
+.service-card li {
+  margin-bottom: 10px;
+}
+.service-card a {
+  text-decoration: none;
+  color: #006233;
+  font-weight: 500;
+}
+.service-card a:hover {
+    text-decoration: underline;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.service-card {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Header moderne -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2020/10/cropped-651px-Seal_of_Algeria_svg-192x192.png" alt="Consulat d'Algérie">
+                    <div class="logo-text">
+                        <h1>Consulat d'Algérie</h1>
+                        <span>Nice - France</span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="contact-quick">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 4 93 97 71 00</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mar-Sam: 8h30-15h30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation moderne -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="consulat.html" class="nav-link">
+                            <i class="fas fa-building"></i>
+                            Le Consulat
+                        </a>
+                        <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="communiques.html" class="nav-link">
+                            <i class="fas fa-bullhorn"></i>
+                            Communiqués
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="prestations.html" class="nav-link">
+                            <i class="fas fa-clipboard-list"></i>
+                            Prestations
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="visas.html" class="nav-link">
+                            <i class="fas fa-passport"></i>
+                            Visas
+                        </a>
+                        <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="formulaires.html" class="nav-link">
+                            <i class="fas fa-file-alt"></i>
+                            Formulaires
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="liens-utiles.html" class="nav-link">
+                            <i class="fas fa-link"></i>
+                            Liens utiles
+                        </a>
+                    </li>
+                    <li class="nav-item"><a href="rdv.html" class="nav-link"><i class="fa fa-envelope"></i> Rendez-vous</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <span class="separator">/</span>
+                <span class="current">Formulaires</span>
+            </div>
+            <h1><i class="fas fa-list"></i> Formulaires</h1>
+            <p>Vous trouverez ici tous les formulaires nécessaires pour vos démarches administratives.</p>
+        </div>
+    </section>
+
+
+    <!-- Sidebar flottante avec liens rapides -->
+    <aside class="quick-links-sidebar">
+        <div class="sidebar-content">
+            <h3>Liens Rapides</h3>
+            <div class="quick-link-item">
+                <a href="https://www.mfa.gov.dz/" target="_blank">
+                    <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2025/06/mae.png" alt="MAE">
+                    <span>Ministère des Affaires Étrangères</span>
+                </a>
+            </div>
+            <div class="quick-link-item">
+                <a href="https://amb-algerie.fr/" target="_blank">
+                    <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2025/06/amb2.png" alt="Ambassade">
+                    <span>Ambassade d'Algérie à Paris</span>
+                </a>
+            </div>
+            <div class="quick-link-item">
+                <a href="#urgence">
+                    <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2021/12/Cartouche-0805385505-AR-300x36.png" alt="Urgence">
+                    <span>Appel d'Urgence</span>
+                </a>
+            </div>
+        </div>
+    </aside>
+
+<!-- Formulaires Administratifs -->
+<section class="services-container">
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-folder-open"></i></div>
+    <h3>Immatriculation & Dossier Consulaire</h3>
+    <ul>
+      <li><a href="#">Formulaire demande première immatriculation</a></li>
+      <li><a href="#">Formulaire demande de transfert de dossier consulaire</a></li>
+      <li><a href="#">Formulaire de transfert de dossier consulaire (doublon)</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+    <h3>Actes d'État Civil</h3>
+    <ul>
+      <li><a href="#">Formulaire demande de 12S (pour célibataire)</a></li>
+      <li><a href="#">Formulaire demande de 12S (pour marié et divorcé)</a></li>
+      <li><a href="#">Formulaire demande de rectification état civil (nés en Algérie)</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-passport"></i></div>
+    <h3>Passeport</h3>
+    <ul>
+      <li><a href="#">Formulaire demande passeport biométrique (nouveau)</a></li>
+      <li><a href="#">Formulaire annexe tuteur légal</a></li>
+      <li><a href="#">Formulaire autorisation paternelle de passeport</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-plane-departure"></i></div>
+    <h3>Voyages & Déplacements</h3>
+    <ul>
+      <li><a href="#">Formulaire autorisation paternelle de voyage</a></li>
+      <li><a href="#">Formulaire déclaration de perte</a></li>
+      <li><a href="#">Formulaire déclaration de vol</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+    <h3>Casier judiciaire & Documents légaux</h3>
+    <ul>
+      <li><a href="#">Formulaire demande casier judiciaire</a></li>
+      <li><a href="#">Formulaire procuration</a></li>
+      <li><a href="#">Formulaire déclaration sur l’honneur CCR</a></li>
+      <li><a href="#">Formulaire inventaire CCR</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+    <h3>Service National</h3>
+    <ul>
+      <li><a href="#">Fiche de renseignement service national</a></li>
+      <li><a href="#">Formulaire dispense – mesures présidentielles</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-vote-yea"></i></div>
+    <h3>Élections</h3>
+    <ul>
+      <li><a href="#">Formulaire inscription liste électorale</a></li>
+      <li><a href="#">Formulaire radiation liste électorale</a></li>
+    </ul>
+  </div>
+
+  <div class="service-card">
+    <div class="service-icon"><i class="fas fa-stamp"></i></div>
+    <h3>Visa</h3>
+    <ul>
+      <li><a href="#">Formulaire demande visa</a></li>
+      <li><a href="#">Formulaire demande visa presse</a></li>
+    </ul>
+  </div>
+</section>
+
+
+
+    <!-- Footer moderne -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2020/10/cropped-651px-Seal_of_Algeria_svg-192x192.png" alt="Consulat d'Algérie">
+                        <h3>Consulat d'Algérie à Nice</h3>
+                    </div>
+                    <p>Votre service consulaire de proximité dans le sud de la France.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/consulatalgerienice"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/ConsulatAlgerieNice"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/consulat-algerie-nice"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="prestations.html">Prestations consulaires</a></li>
+                        <li><a href="visas.html">Visas</a></li>
+                        <li><a href="formulaires.html">Formulaires</a></li>
+                        <li><a href="#rdv">Rendez-vous</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="consulat.html">Le Consulat</a></li>
+                        <li><a href="communiques.html">Communiqués</a></li>
+                        <li><a href="liens-utiles.html">Liens utiles</a></li>
+                        <li><a href="#urgence">Urgence</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 20 Bis, Avenue Mont Rabeau, 06200 Nice</p>
+                        <p><i class="fas fa-phone"></i> +33 4 93 97 71 00</p>
+                        <p><i class="fas fa-envelope"></i> contact@consulat-algerie-nice.org</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Consulat d'Algérie à Nice. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
+

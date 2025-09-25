@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulat d'Algérie à Nice - Services Consulaires</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://consulat-nice-algerie.fr/wp-content/uploads/2020/10/cropped-651px-Seal_of_Algeria_svg-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body>
+    <!-- Header moderne -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2020/10/cropped-651px-Seal_of_Algeria_svg-192x192.png" alt="Consulat d'Algérie">
+                    <div class="logo-text">
+                        <h1>Consulat d'Algérie</h1>
+                        <span>Nice - France</span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="contact-quick">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+33 4 93 97 71 00</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mar-Sam: 8h30-15h30</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation moderne -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            Accueil
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="consulat.html" class="nav-link">
+                            <i class="fas fa-building"></i>
+                            Le Consulat
+                        </a>
+                        <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="communiques.html" class="nav-link">
+                            <i class="fas fa-bullhorn"></i>
+                            Communiqués
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="prestations.html" class="nav-link">
+                            <i class="fas fa-clipboard-list"></i>
+                            Prestations
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="visas.html" class="nav-link">
+                            <i class="fas fa-passport"></i>
+                            Visas
+                        </a>
+                        <ul class="dropdown-menu">
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="formulaires.html" class="nav-link">
+                            <i class="fas fa-file-alt"></i>
+                            Formulaires
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="liens-utiles.html" class="nav-link">
+                            <i class="fas fa-link"></i>
+                            Liens utiles
+                        </a>
+                    </li>
+                    <li class="nav-item active"><a href="rdv.html" class="nav-link"><i class="fa fa-envelope"></i> Rendez-vous</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+                <span class="separator">/</span>
+                <span class="current">rendez-vous</span>
+            </div>
+            <h1><i class="fas fa-calendar-alt"></i> Rendez-vous</h1>
+            <p>Vous trouverez ci dessous les informations a compléter pour prendre rendez-vous.</p>
+        </div>
+    </section>
+
+    <!-- Formulaire de Rendez-vous -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Prendre un Rendez-vous</h2>
+                <p></p>
+            </div>
+            
+            <div class="appointment-container">
+                <div class="appointment-header">
+                    <h2>Rendez-vous </h2>
+                    <p>Veuillez remplir le formulaire ci-dessous pour prendre un rendez-vous.</p>
+                </div>
+                
+                <div class="appointment-important">
+                    <h3><i class="fas fa-exclamation-circle"></i> IMPORTANT :</h3>
+                    <ul>
+                        <li>EN CAS D'EMPÊCHEMENT, VEUILLEZ ANNULER VOTRE RENDEZ-VOUS</li>
+                        <li>(01) UN RENDEZ-VOUS = (01) DOSSIER</li>
+                        <li>APRÈS LA VALIDATION DE VOTRE RENDEZ-VOUS, VOUS RECEVREZ UN MAIL DE CONFIRMATION SINON PARVENU MERCI DE VÉRIFIER DANS VOS COURRIERS INDÉSIRABLES (SPAM)</li>
+                        <li><strong><u>S'IL N'Y A AUCUN RENDEZ-VOUS DE DISPONIBLE, NOUS VOUS INVITONS À CONSULTER LE SITE RÉGULIÈREMENT.</u></strong></li>
+                    </ul>
+                </div>
+                
+                <form class="appointment-form" action="traitement-rdv.php" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="lastName">Nom *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="firstName">Prénom *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="birthDate">Date de naissance *</label>
+                            <input type="date" id="birthDate" name="birthDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service demandé *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Sélectionnez un service</option>
+                                <option value="ccr">C.C.R (Changement de Résidence)</option>
+                                <option value="passeport">Passeport</option>
+                                <option value="cni">Carte Nationale d'Identité</option>
+                                <option value="visa">Demande de Visa</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="appointmentDate">Date de rendez-vous *</label>
+                            <input type="date" id="appointmentDate" name="appointmentDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="appointmentTime">Heure de rendez-vous *</label>
+                            <select id="appointmentTime" name="appointmentTime" required>
+                                <option value="">Sélectionnez un créneau</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="message">Informations complémentaires (optionnel)</label>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Valider le rendez-vous <i class="fas fa-calendar-check"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="https://consulat-nice-algerie.fr/wp-content/uploads/2020/10/cropped-651px-Seal_of_Algeria_svg-32x32.png" alt="Emblème de l'Algérie">
+                        <h3>Consulat d'Algérie à Nice</h3>
+                    </div>
+                    <p>Représentation diplomatique de l'Algérie dans le Sud de la France, offrant des services consulaires à la communauté algérienne.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Le Consulat</a></li>
+                        <li><a href="#">Prestations consulaires</a></li>
+                        <li><a href="#">Demandes de visa</a></li>
+                        <li><a href="#">Formulaires</a></li>
+                        <li><a href="#">Actualités</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Passeports et CNI</a></li>
+                        <li><a href="#">Certificats et légalisations</a></li>
+                        <li><a href="#">État civil</a></li>
+                        <li><a href="#">Services sociaux</a></li>
+                        <li><a href="#">Élections</a></li>
+                        <li><a href="#">Carte consulaire</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> 20 Bis, Avenue Mont Rabeau, 06200 Nice, France</p>
+                        <p><i class="fas fa-phone-alt"></i> +33 4 93 97 71 00</p>
+                        <p><i class="fas fa-fax"></i> +33 4 93 97 71 06</p>
+                        <p><i class="fas fa-envelope"></i> contact@consulat-algerie-nice.org</p>
+                        <p><i class="fas fa-clock"></i> Lundi-Vendredi: 9h00-12h00</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Copyright © 2025 Consulat d'Algérie à Nice. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Navigation mobile
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu && navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Slider Hero
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const prevBtn = document.getElementById('prevSlide');
+        const nextBtn = document.getElementById('nextSlide');
+        let slideIndex = 0;
+        
+        function showSlide(index) {
+            // Reset all slides
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Set new active slide
+            slides[index].classList.add('active');
+            dots[index].classList.add('active');
+            slideIndex = index;
+        }
+        
+        function nextSlide() {
+            let nextIndex = slideIndex + 1;
+            if (nextIndex >= slides.length) nextIndex = 0;
+            showSlide(nextIndex);
+        }
+        
+        function prevSlide() {
+            let prevIndex = slideIndex - 1;
+            if (prevIndex < 0) prevIndex = slides.length - 1;
+            showSlide(prevIndex);
+        }
+        
+        // Auto slide change
+        setInterval(nextSlide, 5000);
+        
+        // Event listeners
+        if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+        if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+        
+        // Dot navigation
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Générer les créneaux horaires
+        function generateTimeSlots() {
+            const timeSelect = document.getElementById('appointmentTime');
+            const slots = [];
+            
+            // Créneaux de 8h35 à 15h30 par tranches de 5 minutes
+            for (let hour = 8; hour <= 15; hour++) {
+                for (let minute = 0; minute < 60; minute += 5) {
+                    if (hour === 8 && minute < 35) continue; // Commencer à 8h35
+                    if (hour === 15 && minute > 30) break; // Finir à 15h30
+                    
+                    const timeString = `${hour.toString().padStart(2, '0')}:${minute.toString().padStart(2, '0')}`;
+                    const displayString = `${hour.toString().padStart(2, '0')}h${minute.toString().padStart(2, '0')}`;
+                    slots.push({ value: timeString, text: displayString });
+                }
+            }
+            
+            // Vider le select et ajouter les options
+            timeSelect.innerHTML = '<option value="">Sélectionnez un créneau</option>';
+            slots.forEach(slot => {
+                const option = document.createElement('option');
+                option.value = slot.value;
+                option.textContent = slot.text;
+                timeSelect.appendChild(option);
+            });
+        }
+        
+        // Initialiser les créneaux au chargement de la page
+        generateTimeSlots();
+        
+        // Définir la date minimum (aujourd'hui)
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('appointmentDate').setAttribute('min', today);
+        
+        // Gérer le changement de date pour vérifier les créneaux disponibles
+        document.getElementById('appointmentDate').addEventListener('change', function() {
+            const selectedDate = this.value;
+            const timeSelect = document.getElementById('appointmentTime');
+            
+            if (selectedDate) {
+                // Afficher un message de chargement
+                timeSelect.innerHTML = '<option value="">Chargement des créneaux...</option>';
+                timeSelect.disabled = true;
+                
+                // Faire un appel AJAX pour récupérer les créneaux disponibles
+                fetch(`check-slots.php?date=${selectedDate}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            // Vider le select
+                            timeSelect.innerHTML = '<option value="">Sélectionnez un créneau</option>';
+                            
+                            // Ajouter les créneaux disponibles
+                            data.available_slots.forEach(slot => {
+                                const option = document.createElement('option');
+                                option.value = slot.value;
+                                option.textContent = slot.text;
+                                timeSelect.appendChild(option);
+                            });
+                            
+                            // Réactiver le select
+                            timeSelect.disabled = false;
+                            
+                            // Afficher le nombre de créneaux disponibles
+                            if (data.total_available === 0) {
+                                timeSelect.innerHTML = '<option value="">Aucun créneau disponible</option>';
+                                timeSelect.disabled = true;
+                            }
+                        } else {
+                            timeSelect.innerHTML = '<option value="">Erreur lors du chargement</option>';
+                            timeSelect.disabled = true;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Erreur:', error);
+                        timeSelect.innerHTML = '<option value="">Erreur lors du chargement</option>';
+                        timeSelect.disabled = true;
+                    });
+            } else {
+                // Si aucune date sélectionnée, réinitialiser les créneaux
+                generateTimeSlots();
+            }
+        });
+        
+        // Form submission
+        const appointmentForm = document.querySelector('.appointment-form');
+        
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simple validation
+            const lastName = document.getElementById('lastName').value;
+            const firstName = document.getElementById('firstName').value;
+            const birthDate = document.getElementById('birthDate').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const appointmentDate = document.getElementById('appointmentDate').value;
+            const appointmentTime = document.getElementById('appointmentTime').value;
+            
+            if (!lastName || !firstName || !birthDate || !email || !phone || !service || !appointmentDate || !appointmentTime) {
+                alert('Veuillez remplir tous les champs obligatoires.');
+                return;
+            }
+            
+            // Validation de la date (doit être dans le futur)
+            const selectedDate = new Date(appointmentDate);
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            if (selectedDate < today) {
+                alert('La date de rendez-vous doit être dans le futur.');
+                return;
+            }
+            
+            // Soumettre le formulaire
+            appointmentForm.submit();
+        });
+    </script>
+    <script src="app-rdv.js"></script>
+
+</body>
+</html>
